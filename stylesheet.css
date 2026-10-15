@@ -1,0 +1,122 @@
+body {
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(59, 59, 59);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+h1 {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.flex img {
+    width: 300px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.flex p {
+    flex: 1;
+    margin: 0;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.flex a {
+    display: inline;
+    color: #ff0000;
+}
+
+.flex a:hover {
+    display: inline;
+    color: #cc0000;
+}
+
+.screenshot {
+    padding-left: 30px;
+    border-radius: 10px;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 60px;
+}
+
+.download:hover {
+    background-color: #cc0000;
+  }
+
+.download img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.center {
+    justify-content: center;
+}
+
+.link img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain
+}
+
+.link h1 {
+    font-size: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.link a img {
+     height: 20px;
+    width: 20px;
+    object-fit: contain
+}
+
+.link a span {
+    font-size: 20px;
+    padding-left: 8px;
+    color: white;
+}
+
+.link a {
+    text-decoration: none;
+    background-color: #ff0000;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.link a:hover {
+    background-color: #cc0000;
+}
+
+.first-download {
+    margin-top: 200px;
+}
