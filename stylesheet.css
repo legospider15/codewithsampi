@@ -37,7 +37,7 @@ h1 {
     flex: 1;
     margin: 0;
     line-height: 1.6;
-    max-width: 500px;
+    max-width: 50em;
 }
 
 .gitlink {
@@ -87,7 +87,7 @@ h1 {
 .link a img {
     height: 20px;
     width: 20px;
-    object-fit: contain
+    object-fit: contain;
 }
 
 .link a span {
@@ -123,4 +123,27 @@ h1 {
 
 .current {
     text-decoration: underline;
+}
+
+table {
+    border-spacing: 0;
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgb(70, 70, 70);
+}
+
+th,
+td {
+    border: 1px solid #ff0000;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+pre {
+    padding-left: 5px;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    background-color: rgb(70, 70, 70);
+    max-width: 60em;
 }
