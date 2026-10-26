@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sampi - ϡ | Functions</title>
+
+        <link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
+        <link rel="icon" type="image/png" href="../assets/favicon.png">
+    </head>
+
+    <body>
+
+        <header>
+            <img src="../assets/favicon.png" alt="" class="logo">
+            <h1>Sampi</h1>
+
+            <div class="flex">
+                <a class="top" href="../index.html">Home</a>
+                <a class="top" href="../old.html">Older Versions</a>
+                <a class="top" href="../docs.html">Documentation</a>
+                <a class="top" href="../changelog.html">Changelog</a>
+                <a class="top" href="../learn.html">Learn</a>
+            </div>
+        </header>
+        
+        <hr><br>
+        <h2>Functions</h2>
+
+        <p class="max_size">
+            What if you are writing a program, and you keep typing say("hello"). That can get annoying. Luckily, this is why there are
+            <strong>Functions</strong>. Functions are reusable code. You start a function with func, and call it with parentheses.
+        </p>
+
+        <pre><code>
+func greet:
+    say("Hello")
+end
+
+greet()
+        </code></pre>
+
+        <p class="max_size">
+            But what if you want to greet different people? That is what <strong>arguments</strong> are for. They allow you to give 
+            functions information.
+        </p>
+    
+        <pre><code>
+func greet name:
+    say("Hello, " + name + "!")
+end
+
+greet("Alice")
+greet("Bob")
+        </code></pre>
+
+        <p class="max_size">
+            Now you can greet new people! But what if you what to get a value back from the function? That is what the <strong>return keyword</strong>
+            is for.
+        </p>
+
+        <pre><code>
+func square x:
+    return x * x
+end
+
+say(square(2))
+        </code></pre>
+
+        <br>
+
+        <div class="flex">
+            <a class="top" href="loops.html">Previous</a>
+            <a class="top" href="multisets.html">Next</a>
+        </div>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sampi - ϡ | Variables</title>
+
+        <link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
+        <link rel="icon" type="image/png" href="../assets/favicon.png">
+    </head>
+
+    <body>
+
+        <header>
+            <img src="../assets/favicon.png" class="logo">
+            <h1>Sampi</h1>
+
+            <div class="flex">
+                <a class="top" href="../index.html">Home</a>
+                <a class="top" href="../old.html">Older Versions</a>
+                <a class="top" href="../docs.html">Documentation</a>
+                <a class="top" href="../changelog.html">Changelog</a>
+                <a class="top" href="../learn.html">Learn</a>
+            </div>
+        </header>
+        
+        <hr>
+        <br>
+        <h2>Variables</h2>
+
+
+        <p class="max_size">
+           This creates a variable.
+        </p>
+
+        <pre><code>
+set x to 1
+say(x)
+        </code></pre>
+
+        <p class="max_size">
+           A variable is like a box that stores a value. Right now, there is a box called 
+           x with the value 1 in it. You can change variables too.
+        </p>
+
+        <pre><code>
+set x to 1
+say(x)
+set x to x + 1
+say(x)
+        </code></pre>
+
+         <p class="max_size">
+           When naming a variable in Sampi, there are some rules. It can have only lower
+           case letters, upper case letters, numbers, and underscores (_). It cannot be one of Sampi's
+           keywords. Keywords are just special words that do things. When naming a variable
+           in Sampi, we ask you to use <strong>snake_case</strong>. That is when you use underscores
+           instead of spaces, like player_x.
+        </p>
+
+        <br>
+        <h3>Glue</h3>
+
+        <p class="max_size">
+            Sometimes when making a variable, you don't want it to change. It is not really a 
+            variable if it can't change, but it is useful for stuff like constants (pi, e) and the 
+            name of a player. This is when you use the glue keyword. The glue keyword means you can't change
+            its value.
+        </p>
+
+        <pre><code>
+glue pi to 3.14
+        </code></pre>
+
+        <p class="max_size">
+            Glueing variables has some rules. Once a value is glued it can <strong>never</strong> be changed. Also,
+            you cannot glue a variable that has already been created.
+        </p>
+
+        <br>
+
+        <a class="top" href="condtionals.html">Next</a>

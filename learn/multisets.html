@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sampi - ϡ | Lists and Dictionaries</title>
+
+        <link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
+        <link rel="icon" type="image/png" href="../assets/favicon.png">
+    </head>
+
+    <body>
+
+        <header>
+            <img src="../assets/favicon.png" alt="" class="logo">
+            <h1>Sampi</h1>
+
+            <div class="flex">
+                <a class="top" href="../index.html">Home</a>
+                <a class="top" href="../old.html">Older Versions</a>
+                <a class="top" href="../docs.html">Documentation</a>
+                <a class="top" href="../changelog.html">Changelog</a>
+                <a class="top" href="../learn.html">Learn</a>
+            </div>
+        </header>
+        
+        <hr><br>
+        <h2>Lists and Dictionaries</h2>
+
+        <p class="max_size">
+            If variables are like a box, then lists are like a box split up into little compartments. You can tell it
+            which compartment you want to store a value in, and which compartment you want to get a value from. The compartments
+            are numbered 1, 2, 3, 4, and so on. Sampi lists use <strong>1 based indexing</strong>. You can create a list with square brackets ([]).
+        </p>
+
+        <pre><code>
+set x to ["a", "b", "c"]
+say(x[1])
+        </code></pre>
+
+        <p class="max_size">
+            To get how long a list is, use length().
+        </p>
+
+        <pre><code>
+say(length([1, 2, 3]))
+        </code></pre>
+
+        <p class="max_size">
+            length() works on strings, dictionaries, and numbers as well. A dictionary is, well, a dictionary!
+            It is like a list, but instead of using 1, 2, 3, 4, and so on, it uses any label you want! You can make a 
+            dictionary using curly braces ({})
+        </p>
+
+        <pre><code>
+set x to {"a":1, "b":2}
+say(x["a"])
+        </code></pre>
+
+        <p class="max_size">
+            You can edit the contents of lists and dictionaries using somthing called a <strong>method</strong>.
+            A method is a special command that you can run on a specific value.
+        </p>
+
+        <pre><code>
+set x to ["a", "b", "c"]
+        </code></pre>
+
+        <br>
+        <table>
+            <tr><th>Method</th><th>Example</th><th>Result</th></tr>
+            <tr><td>add()</td><td>x.add("d")</td><td>["a", "b", "c", "d"]</td></tr>
+            <tr><td>remove()</td><td>x.remove("b")</td><td>["a", "c"]</td></tr>
+            <tr><td>delete()</td><td>x.delete(3)</td><td>["a", "b"]</td></tr>
+            <tr><td>get_index()</td><td>x.get_index("c")</td><td>3</td></tr>
+            <tr><td>insert()</td><td>x.insert(1, "hello")</td><td>["a", "hello", "b", "c"]</td></tr>
+            <tr><td>clear()</td><td>x.clear()</td><td>[]</td></tr>
+            <tr><td>join()</td><td>x.join(", ")</td><td>"a, b, c"</td></tr>
+        </table>
+        <br>
+
+        <pre><code>
+set x to {"a": 1, "b": 2, "c": 3}
+        </code></pre>
+
+        <br>
+        <table>
+            <tr><th>Method</th><th>Example</th><th>Result</th></tr>
+            <tr><td>add()</td><td>x.add("d", 4)</td><td>{"a": 1, "b": 2, "c": 3, "d": 4}</td></tr>
+            <tr><td>remove()</td><td>x.remove("b")</td><td>{"a": 1, "c": 3}</td></tr>
+            <tr><td>clear()</td><td>x.clear()</td><td>{}</td></tr>
+        </table>
+        <br>
+
+        <p class="max_size">
+            Somtimes, you want to loop through the contents of a list. This can be useful for saying every item
+            or to change every item, like to double them. Just make a repeat loop, but use a list instead of a number.
+        </p>
+
+        <pre><code>
+letters = ["a", "b", "c", "d"]
+
+repeat letters as letter:
+        say(letter)
+end
+        </code></pre>
+
+        <br>
+
+        <div class="flex">
+            <a class="top" href="functons.html">Previous</a>
+        </div>

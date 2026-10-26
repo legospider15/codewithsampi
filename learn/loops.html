@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sampi - ϡ | Loops</title>
+
+        <link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
+        <link rel="icon" type="image/png" href="../assets/favicon.png">
+    </head>
+
+    <body>
+
+        <header>
+            <img src="../assets/favicon.png" alt="" class="logo">
+            <h1>Sampi</h1>
+
+            <div class="flex">
+                <a class="top" href="../index.html">Home</a>
+                <a class="top" href="../old.html">Older Versions</a>
+                <a class="top" href="../docs.html">Documentation</a>
+                <a class="top" href="../changelog.html">Changelog</a>
+                <a class="top" href="../learn.html">Learn</a>
+            </div>
+        </header>
+        
+        <hr><br>
+        <h2>Loops</h2>
+
+        <p class="max_size">
+            Suppose you want to say "Hello!" 5 times? Simple! Just run:
+        </p>
+
+        <pre><code>
+say("Hello!")
+say("Hello!")
+say("Hello!")
+say("Hello!")
+say("Hello!")
+        </code></pre>
+
+        <p class="max_size">
+            OK, but what if you want it to run 1,000 times? There is a better option. This is where you would
+            use <strong>a loop</strong>. A loop does what it says. It repeats code a known number of times.
+        </p>
+
+        <pre><code>
+repeat 5:
+    say("hello")
+end
+        </code></pre>
+
+        <p class="max_size">
+            If you want to know what iteration you are on, use "as" and the name of the variable you want.
+            It is common to use the letter i, short for iterator.
+        </p>
+
+        <pre><code>
+repeat 5 as i:
+    say(i)
+end
+        </code></pre>
+
+        <p class="max_size">
+            What if you want to repeat code an unknown number of times? That is where <strong>until loops</strong> come in. They
+            repeat code <strong>until</strong> a condition is true. Here is a program where you guess the password:
+        </p>
+
+        <pre><code>
+set guess to ""
+
+until guess = "password"
+    say("That is not the password.")
+    set guess to ask("What is the password? ")
+end
+
+say("You found the password!")
+        </code></pre>
+
+        <p class="max_size">
+            The code will repeat <strong>until</strong> guess = "password". With until loops, you can make an
+            <strong>infinite loop</strong>. "until true" will <strong>never end</strong>. This can be useful, but be careful.
+        </p>
+
+        <br>
+
+        <div class="flex">
+            <a class="top" href="math.html">Previous</a>
+            <a class="top" href="functons.html">Next</a>
+        </div>

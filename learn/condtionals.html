@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sampi - ϡ | Conditionals</title>
+
+        <link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
+        <link rel="icon" type="image/png" href="../assets/favicon.png">
+    </head>
+
+    <body>
+
+        <header>
+            <img src="../assets/favicon.png" alt="" class="logo">
+            <h1>Sampi</h1>
+
+            <div class="flex">
+                <a class="top" href="../index.html">Home</a>
+                <a class="top" href="../old.html">Older Versions</a>
+                <a class="top" href="../docs.html">Documentation</a>
+                <a class="top" href="../changelog.html">Changelog</a>
+                <a class="top" href="../learn.html">Learn</a>
+            </div>
+        </header>
+        
+        <hr><br>
+        <h2>If Statements</h2>
+
+        <p class="max_size">
+           Right now, the computer will do the same thing each time the program runs. Programming
+           is much more powerful when it can make decisions. For that, programmers use <strong>if statements</strong>. 
+           An if statement can do different things depending on if a condition is true or false.
+        </p>
+
+        <pre><code>
+set x to 1
+
+if x = 1:
+    say("x = 1!")
+end
+        </code></pre>
+
+        <p class="max_size">
+            Now if x is anything other than 1, it won't say anything! But if you don't change the code 
+            directly, it will still always say the same thing! This is why we need user input. The ask()
+            command allows the computer to get information from you.
+        </p>
+
+        <pre><code>
+set colour to ask("What is you favorite colour? ")
+
+if colour = "green":
+    say("That's my favorite too!")
+else:
+    say("That is a fun colour.")
+end
+        </code></pre>
+
+         <p class="max_size">
+            If you type "green", it says, "That's my favorite too!", but if you type anything else, it says,
+            "That is a fun colour."! The same program is now giving different outputs! The <strong>else</strong> tells the 
+            computer: If the condition is not true, then do this. You can also chain if and else together to
+            make more complex decisions.
+        </p>
+
+        <pre><code>
+set num to number(ask("Give me a number. "))
+
+if num > 0:
+    say("Your number is positive.")
+else if num &lt; 0:
+    say("Your number is negitave")
+else:
+    say("Your number is zero.")
+end
+        </code></pre>
+
+        <p class="max_size">
+            <strong>number(ask("Give me a number. "))</strong> turns what you type from a <strong>string</strong> to a <strong>number</strong>. A string is text,
+            like "hello", or "world", and number is a value like 1, 5.7, or 3. Since "4" is a string (see the double quotes),
+            it need to be coverted to a number to be compared with 0. This also works the other way:
+        </p>
+
+        <pre><code>
+string(3)
+        </code></pre>
+
+        <p class="max_size">
+            will make 3 into "3".
+        </p>
+
+        <br>
+
+        <div class="flex">
+            <a class="top" href="varables.html">Previous</a>
+            <a class="top" href="math.html">Next</a>
+        </div>

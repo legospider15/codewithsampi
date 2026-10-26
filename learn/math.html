@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sampi - ϡ | Math</title>
+
+        <link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
+        <link rel="icon" type="image/png" href="../assets/favicon.png">
+    </head>
+
+    <body>
+
+        <header>
+            <img src="../assets/favicon.png" alt="" class="logo">
+            <h1>Sampi</h1>
+
+            <div class="flex">
+                <a class="top" href="../index.html">Home</a>
+                <a class="top" href="../old.html">Older Versions</a>
+                <a class="top" href="../docs.html">Documentation</a>
+                <a class="top" href="../changelog.html">Changelog</a>
+                <a class="top" href="../learn.html">Learn</a>
+            </div>
+        </header>
+        
+        <hr><br>
+        <h2>Math</h2>
+
+        <p class="max_size">
+            Sampi can also do math.
+        </p>
+
+        <br>
+        <table>
+            <tr><th>Operation</th><th>Example</th><th>Result</th></tr>
+            <tr><td>Addition</td><td>1 + 1</td><td>2</td></tr>
+            <tr><td>Subtraction</td><td>3 - 1</td><td>2</td></tr>
+            <tr><td>Multiplication</td><td>2 * 4</td><td>8</td></tr>
+            <tr><td>Division</td><td>8 / 2</td><td>4</td></tr>
+            <tr><td>Exponentiation</td><td>3^2</td><td>9</td></tr>
+            <tr><td>Negation</td><td>~3</td><td>-3</td></tr>
+        </table>
+        <br>
+
+        <p class="max_size">
+            Math in Sampi is strange. ~3 gives -3. You can't simply use -3. The biggest change is the loss of the order
+            of operations. Normally, 2 + 3 * 4 will return 14 (2 + (3 * 4)), but in Sampi, it just goes left to right, so 
+            2 + 3 * 4 is 20 ((2 + 3) * 4). This is very important when chaining conditions. These are the comparisons and how to
+            chain them.
+        </p>
+
+        <br>
+        <table>
+            <tr><th>Comparison</th><th>Example</th><th>Result</th></tr>
+            <tr><td>Equal</td><td>1 = 1</td><td>true</td></tr>
+            <tr><td>Greater than</td><td>2 &gt; 1</td><td>true</td></tr>
+            <tr><td>Less than</td><td>2 &lt; 3</td><td>true</td></tr>
+            <tr><td>Greater than or equal to</td><td>1 &gt;= 1</td><td>true</td></tr>
+            <tr><td>Less than or equal to</td><td>1 &lt;= 2</td><td>true</td></tr>
+            <tr><td>Not equal</td><td>1 != 2</td><td>true</td></tr>
+        </table>
+        <br>
+         <table>
+            <tr><th>Operation</th><th>Example</th><th>Result</th></tr>
+            <tr><td>And</td><td>true and false</td><td>false</td></tr>
+            <tr><td>Or</td><td>true or false</td><td>true</td></tr>
+            <tr><td>Not</td><td>not true</td><td>false</td></tr>
+        </table>
+        <br>
+
+        <p class="max_size">
+            Condition chaining is when left to right evaluation can be annoying. If you type:
+        </p>
+
+        <pre><code>
+say(1 = 1 and 2 = 2)
+        </code></pre>
+        
+        <p class="max_size">
+            You will get an error! But why? It is because instead of doing it like this: (1 = 1) and (2 = 2),
+            it evaluates it this way: ((1 = 1) and 2) = 2. It tries to see if 1 = 1 and 2, which is invalid. The 
+            fix is to run:
+        </p>
+
+        <pre><code>
+say(1 = 1 and (2 = 2))
+        </code></pre>
+
+        <p class="max_size">
+            Now it evaluates the code: (1 = 1) and (2 = 2), which is what we want! When chaining comparisons,
+            always use parentheses.
+        </p>
+
+        <br>
+
+        <div class="flex">
+            <a class="top" href="condtionals.html">Previous</a>
+            <a class="top" href="loops.html">Next</a>
+        </div>

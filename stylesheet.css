@@ -44,6 +44,10 @@ h1 {
     color: #ff0000;
 }
 
+.block {
+    display: block;
+}
+
 .gitlink:hover {
     color: #cc0000;
 }
