@@ -76,5 +76,46 @@ glue pi to 3.14
         </p>
 
         <br>
+        <h3>Comments</h3>
+
+        <p class="max_size">
+            These are not variables, but are very useful to have. Commets are ignored while running,
+            and can be used to document code. Commets are made with "//".
+        </p>
+
+        <pre><code>
+// create variable pi
+glue pi to 3.14
+        </code></pre>
+
+        <p class="max_size">
+            There are also block comments, which can span multipule lines. Block commenst are made with "#".
+        </p>
+
+                <pre><code>
+# this code is to set up all the constants.
+these will be used later in the program #
+
+glue pi to 3.14
+glue phi to 1.61
+glue e to 2.71
+        </code></pre>
+
+        <p class="max_size">
+            Commets can also be used to stop code from running during testing.
+        </p>
+
+                <pre><code>
+set player_x to 1
+
+#
+set player x to player_x + 1
+say("hello")
+#
+
+say(player_x)
+        </code></pre>
+
+        <br>
 
         <a class="top" href="condtionals.html">Next</a>
