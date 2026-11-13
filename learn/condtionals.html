@@ -88,6 +88,96 @@ string(3)
             will make 3 into "3".
         </p>
 
+        <h1>Switch Statements (and big O)</h1>
+
+        <p class="max_size">
+            What if you end up writing a long if/else chain, and you are checking equality?
+        </p>
+
+        <pre><code>
+set day to "Monday"
+
+if day = "Monday":
+    say("start of school")
+else if day = "Tuesday":
+    say("2nd day of shool")
+else if day = "Wendsday":
+    say("HUMP DAYYYY")
+else if day = "Thursday":
+    say("penultimate day of school")
+else if day = "Friday":
+    say("last day of school")
+else if day = "Saturday:
+    say("first day of the weekend")
+else if day = "Sunday":
+    say("last day of the weekend")
+end
+        </code></pre>
+
+        <p class="max_size">
+            It is fine, but kind of messy, and can be slow. In programming, we use something called <strong>big O notation</strong>. 
+            Big O notation is used to display how long something takes to run in the <strong>worst case scenario</strong>. 
+            Big O scales with the size of the thing you are measuring. Lets apply it to the example. Sampi looks through if statements one condition
+            at a time, so if "day" is set to "Saturday", it will take 7 checks. This is called O(n). The "O" shows it is using big O notation, and the 
+            (n) shows how it scales. With 18 days, the worst case scenario is 18, when if there are only 4, the longest it could take is 4 checks. So "n" is the number
+            of things, and since it is just an "n", it means it takes n numeber of check at worst. There or fun ones like O(2n), O(n²), and O(√n), but they are rare.
+        </p>
+
+        <p class="max_size">
+            Lets apply make our code faster. At least in Sampi, a switch statement is used to turn O(n) into O(1). O(1) and O(n) are the most common ones you will
+            see. O(1) means it allways takes <strong>the same amount of time</strong>. You can have 3 days, you can have 100 days, and, on average it will allways take
+            the same amount of time.
+        </p>
+
+        <pre><code>
+set day to "Monday"
+
+find day:
+    "Monday":
+        say("Start of school.")
+    "Tuesday":
+        say("2nd day of shool.")
+    "Wendsday":
+        say("HUMP DAYYYY!!!!")
+    "Thursday":
+        say("Penultimate day of school.")
+    "Friday":
+        say("Last day of school.")
+    "Saturday:
+        say("First day of the weekend.")
+    "Sunday":
+        say("Last day of the weekend.")
+end
+        </code></pre>
+
+        <br>
+
+        <p class="max_size">
+            You can you ":" to be the default code, just make sure it comes last. And "or" can be used to have mutiple inputs run the same code.
+        </p>
+
+        <pre><code>
+set day to "Monday"
+
+find day:
+    "Monday" or "Tuesday" or "Thursday" or"Friday":
+        say("It is a school day.")
+    "Wendsday":
+        say("HUMP DAYYYY")
+    :
+        say("It is the weekend!")
+end
+        </code></pre>
+
+        <br>
+
+        <h2>The Limmits of "find"</h2>
+
+        <p class="max_size">
+            Find is not prefect, and has <strong>lots of limmits</strong>. You can only test againts String or Number literals, and negitve numbers are
+            not (yet) supported. You cannot test it a variable is less than or greater than a value.
+        </p>
+
         <br>
 
         <div class="flex">
